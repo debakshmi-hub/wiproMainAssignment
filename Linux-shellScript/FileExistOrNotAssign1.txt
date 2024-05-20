@@ -1,0 +1,11 @@
+if [ $# -ne 1 ]; then
+	echo "please provide filename"
+	exit 1
+fi
+
+filename=$1
+if [ -e "$filename" ]; then
+	echo "$filename exits in the current directory"
+else
+	echo "$filename doesnot exits in the current directory"
+fi'

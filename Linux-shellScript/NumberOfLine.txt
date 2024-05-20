@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file()
+{
+fileName="$1"
+
+lines=$(wc -l < "$fileName")
+
+echo "This $fileName has $lines no of lines"
+}
+
+read -p "Enter a file name: " f
+file $f 
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+clean(){
+echo "Directory already created"
+}
+
+
+trap clean ERR
+mkdir Testdir
+cd Testdir || exit 1
+
+if [ $? -eq 1 ]; then 
+        echo "Permission occur"
+fi
+no=11
+for((i=1;i<no;i++))
+        do
+
+
+                echo  "file$i" >> file$i.txt 
+        done
+echo "file added successfully"
+

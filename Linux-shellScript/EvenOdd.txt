@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Enter a number: "
+read num
+
+while [ $num -ne 0 ]
+        do
+
+                if [ $((num %2)) -ne 0 ]; then
+                        echo "$num is odd"
+                else
+                        echo "$num is even"
+                fi
+                read num
+done 
