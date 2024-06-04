@@ -1,0 +1,23 @@
+package day6.task1;
+
+public class Pair<T, U> {
+    private T first;
+    private U second;
+
+    public Pair(T first, U second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public Pair<U, T> reverse() {
+        return new Pair<>(second, first);
+    }
+
+    public T getFirst() {
+        return first;
+    }
+
+    public U getSecond() {
+        return second;
+    }
+}
